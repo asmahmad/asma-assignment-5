@@ -6,7 +6,7 @@ public class CustomListApplication {
 		
 		CustomList<String> myCustomList = new CustomArrayList<>();
 		
-//		//Test Code 1:
+		//Test Code 1:
 //		System.out.println("Custom Array List adding 10 Items");
 //		addItems(myCustomList,10);
 //		myCustomList.add("element11");
@@ -22,14 +22,16 @@ public class CustomListApplication {
 //		myCustomList.add("element22");
 //    	myCustomList.add("element23");
 //		myCustomList.add("element24");
-//		
+		
 		//Test Code 3:
 		System.out.println("Custom Array List adding 40 Items");
-		addItems(myCustomList,40);
-		
-		for (int i=0; i<myCustomList.getSize(); i++) {
-		    System.out.println(myCustomList.get(i));
-		}
+		addItems(myCustomList,1000);
+		System.out.println(myCustomList.getSize());
+		System.out.println(myCustomList.get(100));
+//		
+//		for (int i=0; i<myCustomList.getSize(); i++) {
+//		    System.out.println(myCustomList.get(i));
+//		}
 	}
 	public static void addItems(CustomList<String> myCustomList, int size) {
 		for(int i =0; i<size;i++)
