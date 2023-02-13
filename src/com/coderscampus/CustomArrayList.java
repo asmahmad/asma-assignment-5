@@ -14,17 +14,16 @@ public class CustomArrayList<T> implements CustomList<T> {
 			currSize++;
 			return true;
 		} else if (currSize == maxSize) {
-				maxSize = maxSize *2;
-				itemsArray = Arrays.copyOf(itemsArray, maxSize);
-				itemsArray[currSize] = item;
-				currSize++;
-				return true;
+			maxSize = maxSize *2;
+			itemsArray = Arrays.copyOf(itemsArray, maxSize);
+			itemsArray[currSize] = item;
+			currSize++;
+			return true;
 		}
 		return false;
 	}
 	@Override
 	public int getSize() {
-		
 		return maxSize;
 	}
 	@Override
