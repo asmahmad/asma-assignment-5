@@ -24,7 +24,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 	}
 	@Override
 	public int getSize() {
-		return maxSize;
+		return currSize;
 	}
 	@Override
 	public T get(int index) {
